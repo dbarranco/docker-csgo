@@ -6,10 +6,17 @@ This repo contains a dockerised cs:go server.
 
 As this repo is work in progress, the only available method to run the CS:GO Server with the default settings is:
 
+
 ```
+git clone https://github.com/dbarranco/csgo-docker
+
+cd csgo-docker/
+
+docker build . -t dbaus/csgo
+
 docker run -d \
     -p [PORT]:27015/udp \
-    dbaus/csgo:0.1
+    dbaus/csgo
 ```
 
 ## Future work
