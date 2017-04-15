@@ -25,4 +25,4 @@ docker run -d \
 - [ ] Include custom config files to the server
 - [ ] Make a docker-compose of the server
 - [ ] Move it to K8s
-- [ ] Continious integration, continious deployment?
+- [ ] CI/CD?
