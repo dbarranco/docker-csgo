@@ -8,9 +8,9 @@ As this repo is work in progress, the only available method to run the CS:GO Ser
 
 
 ```
-git clone https://github.com/dbarranco/csgo-docker
+git clone https://github.com/dbarranco/docker-csgo
 
-cd csgo-docker/
+cd docker-csgo/
 
 docker build . -t dbaus/csgo
 
