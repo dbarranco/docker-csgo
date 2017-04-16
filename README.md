@@ -14,7 +14,7 @@ This server works out of the box. Only pulling the docker image will start the C
 ```
 docker run -d \
     -p [PORT]:27015/udp \
-    dbaus/csgo
+    dbaus/csgo:latest
 ```
 > Note: The `-d` option will run the container in daemon mode.
 
@@ -45,7 +45,7 @@ This token is necessary if you want to make your containerised server publicly a
 version: '2'
 services:
   csgo:
-    build: .
+    image: "dbaus/csgo:latest"
     ports:
       - '27015/udp:27015/udp'
     environment:
