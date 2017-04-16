@@ -1,6 +1,7 @@
 # Dockerised CS:GO Server. ![](https://img.shields.io/badge/Status-Work%20In%20Progress-yellow.svg)
 
 This repo contains a dockerised cs:go server.
+
 Size of the docker image: 106MB.
 
 ## Usage
