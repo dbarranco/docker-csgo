@@ -1,0 +1,7 @@
+version: '2'
+services:
+  csgo:
+    image: 'dbaus/csgo'
+    ports:
+      - '27015/udp:27015/udp'
+
