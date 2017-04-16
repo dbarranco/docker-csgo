@@ -33,9 +33,9 @@ This token is necessary if you want to make your containerised server publicly a
 > CS:GO game servers and GOTV relays not logged in to a persistent game server account with a Game Server Login Token (GSLT) will only allow clients to connect from the same LAN RFC1918 addresses (10.0.0.0-10.255.255.255,172.16.0.0-172.31.255.255,192.168.0.0-192.168.255.255). If your server has a public routable IP address and clients need to connect from outside the server LAN then you need to get registered for GSLT.
 
 ****
-**Information about the GSLT:**
+**Useful information:**
 
-[More info about the GSLT](https://developer.valvesoftware.com/wiki/Counter-Strike:_Global_Offensive_Dedicated_Servers#Registering_Game_Server_Login_Token)
+[Valve docs about GSLT](https://developer.valvesoftware.com/wiki/Counter-Strike:_Global_Offensive_Dedicated_Servers#Registering_Game_Server_Login_Token)
 
 [Creating the GSLT](http://steamcommunity.com/dev/managegameservers)
 
