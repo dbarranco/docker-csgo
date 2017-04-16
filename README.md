@@ -1,4 +1,4 @@
-# Dockerised CS:GO Server. ![](https://img.shields.io/badge/Status-Work%20In%20Progress-yellow.svg)
+# Dockerised CS:GO Server. ![](https://img.shields.io/badge/Status-Work%20In%20Progress-yellow.svg)   ![](https://img.shields.io/badge/Tested-Manually-brightgreen.svg)
 
 This repo contains a dockerised cs:go server.
 
