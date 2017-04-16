@@ -1,28 +1,31 @@
-# Dockerised CS:GO Server
+# Dockerised CS:GO Server. ![](https://img.shields.io/badge/Status-Work%20In%20Progress-yellow.svg)
 
 This repo contains a dockerised cs:go server.
 
 ## Usage
 
-As this repo is work in progress, the only available method to run the CS:GO Server with the default settings is:
+This server works out of the box. Only pulling the docker image will start the CS:GO server in `0.0.0.0:27015`
 
-
+### Using Docker
 ```
-git clone https://github.com/dbarranco/docker-csgo
-
-cd docker-csgo/
-
-docker build . -t dbaus/csgo
-
 docker run -d \
     -p [PORT]:27015/udp \
     dbaus/csgo
 ```
+> Note: The `-d` option will run the container in daemon mode.
+
+### Using docker-compose
+
+```
+docker-compose up 
+```
+
+>Warning: When the server is installed you will have around 15Gb of space used by the server.
 
 ## Future work
 
 - [ ] Add the env var to start the server with the Game Server Login Token
 - [ ] Include custom config files to the server
-- [ ] Make a docker-compose of the server
+- [ ] How to make the container lightweighter
 - [ ] Move it to K8s
 - [ ] CI/CD?
