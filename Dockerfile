@@ -9,7 +9,7 @@ ENV HOME="/home/$USER"
 ENV INSTALLDIR="$HOME/csgoInstallDir"
 
 
-RUN install_packages lib32stdc++6 lib32gcc1 wget  gzip
+RUN apt install lib32stdc++6 lib32gcc1 wget  gzip
 
 RUN adduser --disabled-password --gecos "" $USER  
 
