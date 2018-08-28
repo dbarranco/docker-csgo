@@ -1,7 +1,8 @@
-version: '2'
+version: '3'
 services:
   csgo:
-    image: 'dbaus/csgo:latest'
+    image: "dbaus/csgo:latest"
     ports:
-      - '27015/udp:27015/udp'
-
+      - '27015:27015/udp'
+    environment:
+      - GAME_SERVER_LOGIN_TOKEN=put_your_token_here
