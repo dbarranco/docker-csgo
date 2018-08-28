@@ -1,4 +1,4 @@
-FROM debian:stretch
+FROM bitnami/minideb:stretch
 
 LABEL version="1.0"
 LABEL creator="David Barranco <d.baus@outlook.com>"
@@ -9,7 +9,7 @@ ENV HOME="/home/$USER"
 ENV INSTALLDIR="$HOME/csgoInstallDir"
 
 
-RUN apt install lib32stdc++6 lib32gcc1 wget  gzip
+RUN install_packages lib32stdc++6 lib32gcc1 wget  gzip
 
 RUN adduser --disabled-password --gecos "" $USER  
 
@@ -19,7 +19,7 @@ USER $USER
 
 WORKDIR $HOME
 
-RUN apt install steamcmd
+RUN install_packages steamcmd
 
 EXPOSE 27015
 ENTRYPOINT ["/run.sh"]
