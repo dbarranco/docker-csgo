@@ -1,6 +1,8 @@
-FROM bitnami/minideb:jessie
+FROM debian:stretch
 
-MAINTAINER David Barranco <d.baus@outlook.com>
+LABEL version="1.0"
+LABEL creator="David Barranco <d.baus@outlook.com>"
+LABEL maintainer="Lennard Indlekofer <info@lennard-indlekofer.de>"
 
 ENV USER="csgo"  
 ENV HOME="/home/$USER" 
@@ -17,7 +19,7 @@ USER $USER
 
 WORKDIR $HOME
 
-RUN wget  -qO- --no-check https://steamcdn-a.akamaihd.net/client/installer/steamcmd_linux.tar.gz | tar vxz
+RUN apt install steamcmd
 
 EXPOSE 27015
 ENTRYPOINT ["/run.sh"]
