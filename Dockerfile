@@ -1,8 +1,6 @@
 FROM bitnami/minideb:stretch
 
-LABEL version="1.0"
-LABEL creator="David Barranco <d.baus@outlook.com>"
-LABEL maintainer="Lennard Indlekofer <info@lennard-indlekofer.de>"
+MAINTAINER David Barranco <d.baus@outlook.com>
 
 ENV USER="csgo"  
 ENV HOME="/home/$USER" 
@@ -19,17 +17,7 @@ USER $USER
 
 WORKDIR $HOME
 
-RUN install_packages steamcmd
+RUN wget  -qO- --no-check https://steamcdn-a.akamaihd.net/client/installer/steamcmd_linux.tar.gz | tar vxz
 
 EXPOSE 27015
 ENTRYPOINT ["/run.sh"]
-
-
-
-
-
-
-
-
-
-
