@@ -1,8 +1,11 @@
 version: '3'
 services:
   csgo:
-    image: "dbaus/csgo:latest"
+    image: 'dbaus/csgo:latest'
     ports:
       - '27015:27015/udp'
-    environment:
-      - GAME_SERVER_LOGIN_TOKEN=put_your_token_here
+      
+# If you want to create a public server remove the comments for the environment variable and add your Game Server Login Token
+# You can create one over here: https://steamcommunity.com/dev/managegameservers
+#    environment:
+#         - GAME_SERVER_LOGIN_TOKEN=put_your_token_here
