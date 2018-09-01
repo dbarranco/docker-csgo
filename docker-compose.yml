@@ -1,7 +1,11 @@
-version: '2'
+version: '3'
 services:
   csgo:
     image: 'dbaus/csgo:latest'
     ports:
-      - '27015/udp:27015/udp'
-
+      - '27015:27015/udp'
+      
+# If you want to create a public server remove the comments for the environment variable and add your Game Server Login Token
+# More info over here: https://github.com/dbarranco/docker-csgo#environment-variables
+#    environment:
+#         - GAME_SERVER_LOGIN_TOKEN=put_your_token_here
